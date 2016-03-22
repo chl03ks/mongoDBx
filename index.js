@@ -7,12 +7,20 @@ mongodb.MongoClient.connect(uri, function (error, db) {
     console.log(error)
     procces.exit(1)
   }
-  db.collection('sample').insert({x: 1}, function (error, result) {
+
+  var doc = {
+    title: 'jaws',
+    year: 1975,
+    director: 'Steven Spielberg',
+    rating: 'PG'
+  }
+
+  db.collection('movies').insert(doc, function (error, result) {
     if (error) {
       console.log(error)
       procces.exit(1)
     }
-    db.collection('sample').find().toArray(function (error, docs) {
+    db.collection('movies').find().toArray(function (error, docs) {
       if (error) {
           console.log(error)
           procces.exit(1)
