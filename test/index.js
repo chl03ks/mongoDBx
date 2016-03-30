@@ -1,1 +1,0 @@
-exports.others = require('./myotherfile')
