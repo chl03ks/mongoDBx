@@ -1,34 +1,6 @@
-var mongodb = require('mongodb')
+var fn = require('./myfile');
 
-var uri = 'mongodb://localhost:27017/example'
+fn();
 
-mongodb.MongoClient.connect(uri, function (error, db) {
-  if (error) {
-    console.log(error)
-    procces.exit(1)
-  }
-
-  var doc = {
-    title: 'jaws',
-    year: 1975,
-    director: 'Steven Spielberg',
-    rating: 'PG'
-  }
-
-  db.collection('movies').insert(doc, function (error, result) {
-    if (error) {
-      console.log(error)
-      procces.exit(1)
-    }
-    db.collection('movies').find().toArray(function (error, docs) {
-      if (error) {
-          console.log(error)
-          procces.exit(1)
-      }
-      console.log('found docs:')
-      docs.forEach(function (doc) {
-        console.log(JSON.stringify(doc))
-      })
-    })
-  })
-})
+var otherFn =require('./test').others;
+otherFn();
