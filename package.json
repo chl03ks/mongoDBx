@@ -8,8 +8,10 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "mocha": "^2.4.5",
-    "mongodb": "^2.1.7"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
   }
 }
