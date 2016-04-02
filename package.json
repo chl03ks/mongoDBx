@@ -4,7 +4,8 @@
   "description": "Repository for the mongodbx coruse on edx",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "watch": "gulp watch"
   },
   "author": "",
   "license": "MIT",
