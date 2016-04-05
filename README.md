@@ -2,24 +2,20 @@
 
 A simple repository to track the course of MongoDBx in edx.
 
+# Homework 1
 
-### To install all the dependencies
+## The Mean Stack Awakens
 
-```
-$ npm install
-
-```
-
-### To run the program just use
+### Run the test
 
 ```
-$ npm start
+$ npm test
 
 ```
 
-### Or
+### Gulp Watch
 
 ```
-$ node index.js
+$ npm run watch
 
 ```
